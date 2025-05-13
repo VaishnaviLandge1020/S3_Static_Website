@@ -7,4 +7,7 @@ Welcome to the source code for **Vaishnavi's personal portfolio website** – a 
 - Beautiful and responsive design
 - Deployed using AWS S3 static website hosting
 
+## 📸 Preview
+
+![Portfolio Screenshot](./PortfolioSS.png)
 
