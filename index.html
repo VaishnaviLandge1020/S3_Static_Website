@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaishnavi's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #f0f4ff, #e4e9ff);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-top: 20px;
+      animation: fadeIn 2s ease-in-out;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.9); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: #4e54c8;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      animation: expand 1s ease-out;
+    }
+
+    @keyframes expand {
+      from { width: 0; }
+      to { width: 60px; }
+    }
+
+    .project {
+      background: white;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #4e54c8;
+    }
+
+    .review {
+      font-style: italic;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Vaishnavi</h1>
+  <p>Creative Web Developer & Designer</p>
+  <img class="profile-pic" src="https://my-unique-bucket-name-vaishnavi.s3.us-east-1.amazonaws.com/profile1.png" alt="Profile Picture">
+</header>
+
+<div class="container">
+  <section>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>A sleek, responsive portfolio to showcase my personal work and skills.</p>
+      <div class="review">"Really polished and smooth animations – love the user experience!"</div>
+    </div>
+
+    <div class="project">
+      <h3>Weather App</h3>
+      <p>A real-time weather app using OpenWeatherMap API, built with React.</p>
+      <div class="review">"Impressive use of APIs and clean UI. Very professional."</div>
+    </div>
+
+    <div class="project">
+      <h3>Task Manager</h3>
+      <p>To-do list app with dark mode and data persistence using localStorage.</p>
+      <div class="review">"Simple, elegant, and super useful. Great job!"</div>
+    </div>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 Vaishnavi. All rights reserved.
+</footer>
+
+</body>
+</html>
